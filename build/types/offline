@@ -14,3 +14,6 @@
 +../../lib/offline/storage_muxer.js
 +../../lib/offline/stored_content_utils.js
 +../../lib/offline/stream_bandwidth_estimator.js
+
++../../lib/offline/electron/storage_mechanism.js
++../../lib/offline/electron/v2_storage_cell.js
