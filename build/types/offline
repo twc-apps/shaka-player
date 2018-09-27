@@ -1,11 +1,11 @@
 # The offline storage system and manifest parser plugin.
 
 +../../lib/offline/download_manager.js
-+../../lib/offline/indexeddb/db_connection.js
-+../../lib/offline/indexeddb/db_operation.js
-+../../lib/offline/indexeddb/storage_mechanism.js
-+../../lib/offline/indexeddb/v1_storage_cell.js
-+../../lib/offline/indexeddb/v2_storage_cell.js
++../../lib/offline/electron/db_connection.js
++../../lib/offline/electron/db_operation.js
++../../lib/offline/electron/storage_mechanism.js
++../../lib/offline/electron/v1_storage_cell.js
++../../lib/offline/electron/v2_storage_cell.js
 +../../lib/offline/manifest_converter.js
 +../../lib/offline/offline_manifest_parser.js
 +../../lib/offline/offline_scheme.js
