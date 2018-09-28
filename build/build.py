@@ -52,19 +52,19 @@ import shakaBuildHelpers
 common_closure_opts = [
     '--language_out', 'ECMASCRIPT3',
 
-    '--jscomp_error=*',
+    # '--jscomp_error=*',
 
     # Turn off complaints like:
     #   "Private property foo_ is never modified, use the @const annotation"
-    '--jscomp_off=jsdocMissingConst',
+    # '--jscomp_off=jsdocMissingConst',
 
     '--extra_annotation_name=listens',
     '--extra_annotation_name=exportDoc',
     '--extra_annotation_name=exportInterface',
 
-    '--conformance_configs',
-    ('%s/build/conformance.textproto' %
-     shakaBuildHelpers.cygwin_safe_path(shakaBuildHelpers.get_source_base())),
+    # '--conformance_configs',
+    # ('%s/build/conformance.textproto' %
+    #  shakaBuildHelpers.cygwin_safe_path(shakaBuildHelpers.get_source_base())),
 
     '--generate_exports',
 ]
@@ -80,7 +80,7 @@ debug_closure_opts = [
 ]
 debug_closure_defines = [
     '-D', 'goog.DEBUG=true',
-    '-D', 'goog.asserts.ENABLE_ASSERTS=true',
+    '-D', 'goog.asserts.ENABLE_ASSERTS=false',
     '-D', 'shaka.log.MAX_LOG_LEVEL=4',  # shaka.log.Level.DEBUG
     '-D', 'shaka.Player.version="%s-debug"' % (
           shakaBuildHelpers.calculate_version()),
